@@ -32,15 +32,6 @@ class Plugin(BasePlugin):
     def OutgoingGlobalSearchEvent(self, text):  # noqa
         return (self.get_next_search(text),)
 
-    # def OutgoingRoomSearchEvent(self, rooms, text):  # noqa
-    #     return (rooms, text + "TEST2")
-    #
-    # def OutgoingBuddySearchEvent(self, text):  # noqa
-    #     return (text + "TEST3",)
-    #
-    # def OutgoingUserSearchEvent(self, users, text):  # noqa
-    #     return (users, text + "TEST4")
-
     def get_next_search(self, text):
         if text == "!n":
             if self.currentloadedfile != self.settings['filename']:
@@ -63,14 +54,3 @@ class Plugin(BasePlugin):
                 self.currentsong = self.currentsong + 1
                 return song
         return text
-    # def get_np(self, text):
-    #     self.np_format = text
-    #     now_playing = self.np.now_playing.get_np(get_format=self.get_format)
-    #
-    #     if now_playing:
-    #         return now_playing
-    #
-    #     return text
-
-    def get_format(self):
-        return self.np_format
