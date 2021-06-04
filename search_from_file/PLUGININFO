@@ -1,0 +1,4 @@
+Version = "2021-06-01r00"
+Authors = ['davidEncrypted']
+Name = "Search from file"
+Description = "Searches from file"
