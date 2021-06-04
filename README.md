@@ -1,3 +1,3 @@
-# Nicotine--Auto-File-Search
+# Nicotine-Auto-File-Search
 
 Nicotine+ plugin
